@@ -9,7 +9,7 @@ import lombok.*;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class MakeLessonRequestDto {  // DTO에 뭐 있어야 할지 고민해보기
+public class MakeLessonRequestDto {
     private Long studentId;
 
     @Enumerated(value = EnumType.STRING)
