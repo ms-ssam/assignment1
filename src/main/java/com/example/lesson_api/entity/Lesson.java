@@ -1,17 +1,18 @@
 package com.example.lesson_api.entity;
 
 import jakarta.persistence.*;
-import lombok.*;
+import lombok.AccessLevel;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
 
 @Entity
-@AllArgsConstructor
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @Builder
 @Getter
 public class Lesson {
 
-    @Id
-    @GeneratedValue
+    @Id @GeneratedValue
     @Column(name = "lesson_id")
     private Long id;
 
